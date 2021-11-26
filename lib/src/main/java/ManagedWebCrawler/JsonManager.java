@@ -17,12 +17,12 @@ public class JsonManager {
 	public static void main(String[] args) throws GeneralSecurityException, IOException{
 
 	    String searchQuery = "upland allied concept"; //The query to search
-	    String cx = "3827fb2e016259bb6"; //Your search engine ID
+	    String cx = "dfdksf;ieiegkgk"; //Your search engine ID
 
 	    //Instance Customsearch
 	    Customsearch cs = new Customsearch.Builder(GoogleNetHttpTransport.newTrustedTransport(), JacksonFactory.getDefaultInstance(), null) 
-	                   .setApplicationName("MyApplication") 
-	                   .setGoogleClientRequestInitializer(new CustomsearchRequestInitializer("AIzaSyBgr1N6N7NXOwtP-I7tfk3YC2-rfRhmBeE")) 
+	                   .setApplicationName("com.finidata") 
+	                   .setGoogleClientRequestInitializer(new CustomsearchRequestInitializer("Your API Token")) 
 	                   .build();
 
 	    //Set search parameter
